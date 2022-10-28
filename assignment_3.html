@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>mediumish</title>
+  <style>
+    @import url('http://fonts.cdnfonts.com/css/righteous');
+* {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  overflow: hidden;
+  background-color:white;
+  padding: 20px 10px;
+}
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+} 
+.header-right {
+  float: right;
+}
+.parentDiv {
+      display: block;
+      height: 40px;
+      width: 90%;
+      font-size: 20px;
+    }
+
+    /* To set icon at the right side of the div*/
+    .icon {
+      float: left;
+    }
+form {
+  background-color: white;
+  width: 300px;
+  height: 44px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border:2px solid;
+  border-color:   #F8F8F8;
+}
+input {
+  all: unset;
+  font: 16px system-ui;
+  height: 100%;
+  width: 100%;
+  padding: 6px 10px;
+}
+::placeholder {
+  color: black;
+  opacity: 0.7; 
+}
+button {
+  all: unset;
+  cursor: pointer;
+  width: 44px;
+  height: 44px;
+}
+
+svg {
+  color: black;
+  fill: currentColor;
+  width: 24px;
+  height: 24px;
+}
+.fakeimg {
+  background-color: grey;
+  width: 100%;
+}
+.card {
+   background-color: white;
+   margin: 5px;
+   width: 40%;
+   border:2px solid;
+   border-color:  #F8F8F8;
+}
+.adjust{
+     width: 40%;
+     background-color: white;
+}
+.control{
+  width:35px;
+  background-color: white;
+  height: 35px;
+  margin-left: 10px;
+  margin-top: 1px;
+}
+.book{
+	width:20px;
+  background-color: white;
+  height: 20px;
+  margin-left: 10px;
+}
+.container {
+
+    width: 30%
+}
+.image {
+      flex-basis: 40%
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .header-right {
+    float: none;
+  }
+}
+</style>
+</head>
+<body style="background-color: black">
+  <div style="border:2px solid;background-color: white;margin: 5%;padding: 5%">
+      <!-- Header -->
+      <div class="header">
+        <a href="#default" class="logo">m</a>
+        <div class="header-right">
+          <a href="#home"><b>Stories</b></a>
+          <a href="#contact">Post</a>
+          <a href="#about">Author</a>
+          <form role="search" id="form">
+          <input type="search" id="query" name="q"
+           placeholder="Search..."
+           aria-label="Search through site content">
+          <button>
+            <svg viewBox="0 0 1024 1024"><path class="path1" d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z"></path></svg>
+          </button>
+        </form>
+        </div>
+      </div>
+      <hr style="margin:10px">
+        <!-- mediumish -->
+      <div style="margin:10px">
+        <div style="font-family: 'Righteous', sans-serif;font-size: 40px;height: 40px">
+          <p><b>Mediumish</b></p>
+        </div>
+        <div style="font-size: 20px;height: 40px;">
+          <p>Bootstrap theme,medium style,simple perfect for bloggers</p>
+        </div>
+      </div>
+
+        <!-- featured -->
+        
+    <div>
+      <div style="margin:10px">
+        <p><b>Featured</b></p>
+      </div>
+      <div style="display: flex;margin:10px">
+        <div style="width: 8%;height: 2px solid">
+          <hr style="border:1px solid">
+        </div>
+        <div style="margin-left: 0%;width: 100%">
+          <hr>
+        </div>
+      </div>
+      <div style="display: flex;">
+        <div style="display: flex;height: 232px;width: 50%;border:2px solid;border-color:#F8F8F8;margin: 10px">
+          <div class="adjust">
+              <img src="pics/7.jpg" class="fakeimg" style="height:100%;">
+            </div>
+            <div style="width: 100%;padding: 10px;">
+              <h3>Dieting</h3>
+              <p>dieting, regulating one’s food intake for the purpose of improving one’s physical condition, especially for the purpose of reducing obesity and make your mind strong</p>
+            <div style="display: flex;">
+              <div class="parentDiv">
+                <!--display for the all div is block-->
+                <div>
+                  <span class="icon">
+                    <i><img src="pics/person.jpg" class="control"></i>
+                  </span>
+                  <span style="float: right;margin-top: 10px;">
+                    <i><img src="pics/boomark.png" class="book"></i>
+                  </span>
+                  <div style="margin-left: 50px">
+                    <div style="font-size: 18px;height: 15px;">
+                      <span>Ali</span>
+                    </div>
+                    <div>
+                      <span style="font-size: 12px">27/10/2022</span>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div> 
+            </div>
+
+            </div>
+        </div>
+        <div style="display: flex;height: 232px;width: 50%;border:2px solid;border-color:   #F8F8F8;margin: 10px">
+          <div class="adjust">
+              <img src="pics/8.jpg" class="fakeimg" style="height:100%;">
+          </div>
+          <div style="width: 100%;padding: 10px">
+            <h3>Jogging</h3>
+            <p>Jogging is a form of trotting or running at a slow or leisurely pace. The main intention is to increase physical fitness with less stress on the body</p>
+              <div style="display: flex;">
+                <div class="parentDiv">
+                  <!--display for the all div is block-->
+                  <div>
+                    <span class="icon">
+                      <i><img src="pics/person.jpg" class="control"></i>
+                    </span>
+                    <span style="float: right;margin-top: 10px;">
+                      <i><img src="pics/boomark.png" class="book"></i>
+                    </span>
+                    <div style="margin-left: 50px">
+                      <div style="font-size: 18px;height: 15px;">
+                        <span>Ali</span>
+                      </div>
+                      <div>
+                        <span style="font-size: 12px">27/10/2022</span>
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div> 
+              </div>
+
+              </div>
+          </div>
+        </div>
+      <div style="display: flex;">
+        <div style="display: flex;height: 10%;width: 50%;border:2px solid;border-color:   #F8F8F8;margin: 10px">
+          <div class="adjust">
+              <img src="pics/9.jpg" class="fakeimg" style="height:100%;width: 100%">
+            </div>
+            <div style="width: 100%;padding: 10px">
+              <h3>London</h3>
+              <p>London, the capital of England and the United Kingdom, is a 21st-century city with history stretching back to Roman times.</p>
+              <div style="display: flex;">
+                <div class="parentDiv">
+                  <!--display for the all div is block-->
+                  <div>
+                    <span class="icon">
+                      <i><img src="pics/person.jpg" class="control"></i>
+                    </span>
+                    <span style="float: right;margin-top: 10px;">
+                      <i><img src="pics/boomark.png" class="book"></i>
+                    </span>
+                    <div style="margin-left: 50px">
+                      <div style="font-size: 18px;height: 15px;">
+                        <span>Ali</span>
+                      </div>
+                      <div>
+                        <span style="font-size: 12px">27/10/2022</span>
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div> 
+              </div>
+
+            </div>
+        </div>
+          <div style="display: flex;height: 225px;width: 50%;border:2px solid;border-color:   #F8F8F8;margin: 10px;">
+          <div class="adjust">
+              <img src="pics/10.jpg" class="fakeimg" style="height:100%;width: 100%">
+            </div>
+            <div style="width: 100%;padding: 10px">
+              <h3>San Francisco</h3>
+              <p>San Francisco, officially the City and County of San Francisco, is the commercial, financial, and cultural center of Northern</p>
+              <div style="display: flex;">
+                <div class="parentDiv">
+                <!--display for the all div is block-->
+                <div>
+                  <span class="icon">
+                    <i><img src="pics/person.jpg" class="control"></i>
+                  </span>
+                  <span style="float: right;margin-top: 10px;">
+                    <i><img src="pics/boomark.png" class="book"></i>
+                  </span>
+                  <div style="margin-left: 50px">
+                    <div style="font-size: 18px;height: 15px;">
+                      <span>Ali</span>
+                    </div>
+                    <div>
+                      <span style="font-size: 12px">27/10/2022</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+
+            </div>
+        </div>
+      </div>
+      </div>
+
+        <!-- stories -->
+    <div>
+      <div style="margin:10px">
+        <p><b>All Stories</b></p>
+      </div>
+      <div style="display: flex;margin:10px">
+        <div style="width: 8%;height: 2px solid">
+          <hr style="border:1px solid">
+        </div>
+        <div style="margin-left: 0%;width: 100%">
+          <hr >
+        </div>
+      </div>
+      <div style="display: flex;">
+        <div class="card">
+            <img src="pics/1.jpg" class="fakeimg" style="height:200px;">
+            <div  style="margin: 20px">
+              <h3>Essential office assistant skills</h3>
+              <p>Having a wide variety of skills and being able to execute them effectively in the workplace is greatly and you will get a lot of things to learn</p>
+            </div>
+            <div style="display: flex;">
+                <div class="parentDiv" style="margin-left: 20px;margin-bottom: 10px">
+                <!--display for the all div is block-->
+                <div>
+                  <span class="icon">
+                    <i><img src="pics/person.jpg" class="control"></i>
+                  </span>
+                  <span style="float: right;margin-top: 10px;">
+                    <i><img src="pics/boomark.png" class="book"></i>
+                  </span>
+                  <div style="margin-left: 50px">
+                    <div style="font-size: 18px;height: 15px;">
+                      <span>Ali</span>
+                    </div>
+                    <div>
+                      <span style="font-size: 12px">27/10/2022</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+          </div>
+
+          </div>
+          <div class="card">
+            <img src="pics/2.jpg" class="fakeimg" style="height:200px;">
+            <div style="margin: 20px">
+              <h3>JAPAN</h3>
+              <p>Japan is an island country in East Asia. It is situated in the northwest Pacific Ocean, and is bordered on the west by the Sea of Japan</p>
+            </div>
+            <div style="display: flex;">
+                <div class="parentDiv" style="margin-left: 20px;margin-bottom: 10px">
+                <!--display for the all div is block-->
+                <div>
+                  <span class="icon">
+                    <i><img src="pics/person.jpg" class="control"></i>
+                  </span>
+                  <span style="float: right;margin-top: 10px;">
+                    <i><img src="pics/boomark.png" class="book"></i>
+                  </span>
+                  <div style="margin-left: 50px">
+                    <div style="font-size: 18px;height: 15px;">
+                      <span>Ali</span>
+                    </div>
+                    <div>
+                      <span style="font-size: 12px">27/10/2022</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+          </div>
+          </div>
+          <div class="card">
+            <img src="pics/3.jpg" class="fakeimg" style="height:200px;">
+            <div style="margin: 20px">
+              <h3>Why is Travel Important?</h3>
+              <p>Travel Makes You Happier,Travel Lets You Disconnect & Recharge,Traveling Relieves Stress and Anxiety from work and stressful life</p>
+            </div>
+            <div style="display: flex;">
+                <div class="parentDiv" style="margin-left: 20px;margin-bottom: 10px">
+                <!--display for the all div is block-->
+                <div>
+                  <span class="icon">
+                    <i><img src="pics/person.jpg" class="control"></i>
+                  </span>
+                  <span style="float: right;margin-top: 10px;">
+                    <i><img src="pics/boomark.png" class="book"></i>
+                  </span>
+                  <div style="margin-left: 50px">
+                    <div style="font-size: 18px;height: 15px;">
+                      <span>Ali</span>
+                    </div>
+                    <div>
+                      <span style="font-size: 12px">27/10/2022</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+          </div>
+          </div>
+      </div>
+      <div style="display: flex;">
+        <div class="card">
+            <img src="pics/4.jpg" class="fakeimg" style="height:200px;">
+            <div style="margin: 20px">
+              <h3>Benefits of university education</h3>
+              <p>Improve your prospects for life,Achieve and excel,Establish professional connections,Discover Your Interests,Increased</p>
+            </div>
+            <div style="display: flex;">
+                <div class="parentDiv" style="margin-left: 20px;margin-bottom: 10px">
+                <!--display for the all div is block-->
+                <div>
+                  <span class="icon">
+                    <i><img src="pics/person.jpg" class="control"></i>
+                  </span>
+                  <span style="float: right;margin-top: 10px;">
+                    <i><img src="pics/boomark.png" class="book"></i>
+                  </span>
+                  <div style="margin-left: 50px">
+                    <div style="font-size: 18px;height: 15px;">
+                      <span>Ali</span>
+                    </div>
+                    <div>
+                      <span style="font-size: 12px">27/10/2022</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+          </div>
+          </div>
+          <div class="card">
+            <img src="pics/5.jpg" class="fakeimg" style="height:200px;">
+            <div style="margin: 20px">
+              <h3>Benefits of Modern Media</h3>
+              <p>Research Becomes Easier,Teaching and Learning Become Easier,Young people as social participants and active citizens,Young people developing a voice</p>
+            </div>
+            <div style="display: flex;">
+                <div class="parentDiv" style="margin-left: 20px;margin-bottom: 10px">
+                <!--display for the all div is block-->
+                <div>
+                  <span class="icon">
+                    <i><img src="pics/person.jpg" class="control"></i>
+                  </span>
+                  <span style="float: right;margin-top: 10px;">
+                    <i><img src="pics/boomark.png" class="book"></i>
+                  </span>
+                  <div style="margin-left: 50px">
+                    <div style="font-size: 18px;height: 15px;">
+                      <span>Ali</span>
+                    </div>
+                    <div>
+                      <span style="font-size: 12px">27/10/2022</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+          </div>
+          </div>
+          <div class="card">
+            <img src="pics/6.jpg" class="fakeimg" style="height:200px;">
+            <div style="margin: 20px">
+              <h3>8 job skills you should have</h3>
+              <p>1.Communication,2.Teamwork,3.Problem solving,4.Initiative and enterprise,5.Planning and organising,6.Self-management,7.Learning</p>
+            </div>
+            <div style="display: flex;">
+                <div class="parentDiv" style="margin-left: 20px;margin-bottom: 10px">
+                <!--display for the all div is block-->
+                <div>
+                  <span class="icon">
+                    <i><img src="pics/person.jpg" class="control"></i>
+                  </span>
+                  <span style="float: right;margin-top: 10px;">
+                    <i><img src="pics/boomark.png" class="book"></i>
+                  </span>
+                  <div style="margin-left: 50px">
+                    <div style="font-size: 18px;height: 15px;">
+                      <span>Ali</span>
+                    </div>
+                    <div>
+                      <span style="font-size: 12px">27/10/2022</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+          </div>
+      </div>
+      </div>
+  </div>
+</body>
+</html>
